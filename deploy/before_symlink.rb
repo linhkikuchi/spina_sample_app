@@ -12,9 +12,9 @@ end
 
 if shared_filesystem?
   run "echo 'Shared File System found. Symlinking...'"
-  run "echo 'release_path: #{config.release_path}/public/spree' >> #{config.shared_path}/logs.log" 
-  run "mkdir -p #{efs_mount_point}/public/spree"
-  run "ln -nfs #{efs_mount_point}/public/spree #{config.release_path}/public/spree"
+  run "echo 'release_path: #{config.release_path}/public/uploads' >> #{config.shared_path}/logs.log" 
+  run "mkdir -p #{efs_mount_point}/public/uploads"
+  run "ln -nfs #{efs_mount_point}/public/uploads #{config.release_path}/public/uploads"
 else
   run "echo 'Environment does not have a Shared File System'"
 end
