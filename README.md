@@ -1,7 +1,7 @@
 ## Engine Yard's Spina Sample Application
 
 [Spina](https://github.com/denkGroot/Spina) is a CMS built upon the Rails framework.
-It comes in the form of a Rails Engine and must created inside a host application.
+It comes in the form of a Rails Engine and must be created inside a host application.
 This repository contains a Spina host application with some additional tools to help you deploy on Engine Yard.
 After reviewing this, you should create your own spina application or fork this one and make the appropriate customizations.
 
@@ -11,7 +11,7 @@ We may address eventual security risk issues and enhance the deployment workflow
 #### Setting up the application
 
 * Go to your account panel and create an application
-* Use `git@github.com:engineyard/spina_sample_app.git` for **Git Repository URI**
+* Use `git://github.com/engineyard/spina_sample_app.git` for **Git Repository URI**
 * Give you application a name. We'll use **spina** for this guide
 * Choose **Rails 5** for **Web Application Framework**
 
@@ -23,7 +23,7 @@ We may address eventual security risk issues and enhance the deployment workflow
 
 (*) Is you don't find Puma in the application server list, refer to this [link](https://support.cloud.engineyard.com/hc/en-us/articles/205413928-Use-Puma-with-Engine-Yard-Cloud).
 
-(**) Spina supports any database ActiveRecord does. We recommend MySQL specifically for this guide because our sample data loading procedure uses `pg_dump` and `pg_restore` commands. Our sample data is the whole Rails 5 api documentation loaded into a CMS system, which is considerably larger than the default one. That way you can make an educated decision after appraising performance.
+(**) Spina supports any database ActiveRecord does. We recommend Postgresql specifically for this guide because our sample data loading procedure uses `pg_dump` and `pg_restore` commands. Our sample data is the whole Rails 5 api documentation loaded into a CMS system, which is considerably larger than the default one. That way you can make an educated decision after appraising performance.
 
 #### Booting a cluster
 
@@ -55,7 +55,7 @@ Go to your environment's page and click Apply.
 
 ##### Shared File System
 
-When creating products on Spina you will have to upload images to the server's file system.
+When creating pages on Spina you will have to upload images to the server's file system.
 As you might have guessed in a multi server configuration all of your instances have to access the images folder.
 As your provisioning goes on, take this time to create a Shared File System as one of your environment options.
 The deployment process will take care of linking all of your instances to that mount point.
