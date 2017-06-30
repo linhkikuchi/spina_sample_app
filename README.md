@@ -1,6 +1,6 @@
 ## Engine Yard's Spina Sample Application
 
-[Spina](https://github.com/denkGroot/Spina) Spina is a CMS built upon the Rails framework.
+[Spina](https://github.com/denkGroot/Spina) is a CMS built upon the Rails framework.
 It comes in the form of a Rails Engine and must created inside a host application.
 This repository contains a Spina host application with some additional tools to help you deploy on Engine Yard.
 After reviewing this, you should create your own spina application or fork this one and make the appropriate customizations.
