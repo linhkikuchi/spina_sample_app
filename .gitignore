@@ -21,6 +21,8 @@ config/secrets.yml
 
 config/puma.rb
 config/database.yml
+/config/initializers/devise.rb
+/cookbooks/custom-rails_secrets/templates/default/secrets.yml.*
 
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
