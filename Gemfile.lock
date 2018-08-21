@@ -148,6 +148,8 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     pg (0.21.0)
+    prometheus-client (0.8.0)
+      quantile (~> 0.2.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -155,6 +157,7 @@ GEM
     pry-nav (0.2.4)
       pry (>= 0.9.10, < 0.11.0)
     puma (3.9.1)
+    quantile (0.2.1)
     rack (2.0.3)
     rack-rewrite (1.5.1)
     rack-test (0.6.3)
@@ -263,6 +266,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mediawiki_api
   pg (~> 0.18)
+  prometheus-client
   pry-nav
   puma (~> 3.0)
   rails (~> 5.0.0)
@@ -277,4 +281,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.5
+   1.16.3
